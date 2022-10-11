@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, {useEffect, useState} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper";
+import {Navigation, Pagination} from "swiper";
 function HeaderSlider() {
   const [domLoaded, setdomLoaded] = useState(false);
   useEffect(() => {
@@ -50,8 +50,7 @@ function HeaderSlider() {
               }}
               navigation={true}
               modules={[Pagination, Navigation]}
-              className="swiper-wrapper"
-            >
+              className="swiper-wrapper">
               <SwiperSlide className="swiper-slide">
                 <a href="#">
                   <h6>
