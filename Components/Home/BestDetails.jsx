@@ -101,12 +101,8 @@ function BestDetails() {
                   </div>
                   <div className="dis__price">
                     <div className="dis">
-                                          <span>-12.97%<
-                        
-                        
-                        
-                        
-                                       <p>$4.00</p>
+                      <span>-12.97%</span>
+                      <p>$4.00</p>
                     </div>
                     <div className="pinCode">
                       <span>0.198752</span>
@@ -116,7 +112,6 @@ function BestDetails() {
                     </div>
                   </div>
                   <p>
-
                     <i className="fa-brands fa-steam-symbol"></i> Steam price:
                     $6.77
                   </p>
@@ -124,8 +119,7 @@ function BestDetails() {
               </SwiperSlide>
 
               <SwiperSlide className="swiper-slide">
-                              <a h
-                                  ref="#">
+                <a href="#">
                   <h6>
                     Water elemental <span>FN</span>
                   </h6>
