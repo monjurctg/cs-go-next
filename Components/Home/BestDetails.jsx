@@ -22,6 +22,7 @@ function BestDetails() {
 
     setCurrentValue(crntValue?.innerHTML);
   }, [isChange]);
+  console.log(currentValue, total);
 
   useEffect(() => {
     setdomLoaded(true);
@@ -39,9 +40,9 @@ function BestDetails() {
   };
   return (
     <div>
-      <div className="bestDealsContainer header_area">
-        <div style={{overflow: "hidden"}} className="d-flex w-100">
-          <div style={{width: "400px", marginRight: "14px"}}>
+      <div className=" mt-3 ">
+        <div style={{overflow: "hidden"}} className="header__slider w-100">
+          <div className="bt__deals">
             <button className="limitedOfferButton">Limited Offer</button>
             <h4
               style={{
@@ -53,24 +54,26 @@ function BestDetails() {
               }}>
               Best Deals
             </h4>
-            <div className="sliderLeftOrRightButton">
-              <div
-                className="leftArrow"
-                style={{cursor: "pointer"}}
-                onClick={handleLeftClick}>
-                <i class="fa-solid fa-chevron-left"></i>
+            <div className="slider-btn-container">
+              <div className="sliderLeftOrRightButton">
+                <div
+                  className="leftArrow"
+                  style={{cursor: "pointer"}}
+                  onClick={handleLeftClick}>
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div
+                  className="rightArrow"
+                  style={{cursor: "pointer"}}
+                  onClick={handleRightClick}>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
               </div>
-              <div
-                className="rightArrow"
-                style={{cursor: "pointer"}}
-                onClick={handleRightClick}>
-                <i class="fa-solid fa-chevron-right"></i>
+              <div>
+                <p style={{color: "#fff", marginTop: "10px"}}>
+                  {currentValue ?? 1}of {total ?? 6}
+                </p>
               </div>
-            </div>
-            <div>
-              <p style={{color: "#fff", marginTop: "10px"}}>
-                {currentValue} of {total}
-              </p>
             </div>
           </div>
           <div className="swiper headerSwiper">
@@ -367,6 +370,27 @@ function BestDetails() {
             </a> */}
             </div>
           </div>
+        </div>
+      </div>
+      <div className="slider-btn-992">
+        <div className="sliderLeftOrRightButton">
+          <div
+            className="leftArrow"
+            style={{cursor: "pointer"}}
+            onClick={handleLeftClick}>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div
+            className="rightArrow"
+            style={{cursor: "pointer"}}
+            onClick={handleRightClick}>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div>
+          <p style={{}}>
+            {currentValue ?? 1}of {total ?? 6}
+          </p>
         </div>
       </div>
     </div>

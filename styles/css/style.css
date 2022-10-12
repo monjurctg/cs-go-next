@@ -538,6 +538,9 @@ ul {
   align-items: center;
   gap: 10px;
 }
+.slider-btn-992 {
+  display: none;
+}
 
 @media all and (max-width: 1400px) {
   .header_area .header__slider .bt__deals {
@@ -565,6 +568,17 @@ ul {
 }
 
 @media all and (max-width: 992px) {
+  .slider-btn-container {
+    display: none;
+  }
+  .slider-btn-992 {
+    display: block;
+    position: relative;
+    display: flex;
+    top: -192px;
+    justify-content: center;
+    align-items: center;
+  }
   .slider-btn {
     display: none;
   }
