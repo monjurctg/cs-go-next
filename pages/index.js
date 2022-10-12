@@ -26,7 +26,7 @@ export default function Home() {
             <div className="col-xl-12">
               <h1>Buy or Sell</h1>
               <div className="hero_bnnr">
-                <Image src={MaskGroup} height={680} alt="bnnr" />
+                <Image src={MaskGroup} height={680} width={1080} alt="bnnr" />
               </div>
               <h3>Gear up for your next stylish clutch</h3>
               <div className="hero_btn">
