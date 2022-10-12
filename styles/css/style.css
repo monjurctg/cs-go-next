@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-a,
-p,
-span,
-li,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #0e0726;
-  color: white;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -76,8 +49,9 @@ ul {
 
 .header_area h1 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
+  line-height: 72px;
   text-transform: uppercase;
   color: #9db4d3;
   /* margin-bottom: 24px; */
@@ -87,10 +61,11 @@ ul {
   font-weight: 400;
   font-size: 49px;
   text-align: center;
-  width: 40%;
+  width: 45%;
+
   margin: 0 auto;
   color: #ffffff;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .header_area .header__slider {
@@ -154,6 +129,39 @@ ul {
   color: white;
 }
 
+.header__slider .slider-btn {
+  position: relative;
+  display: flex;
+
+  gap: 20px;
+  top: 100px;
+  left: 0px;
+}
+
+.header_area .swiper-slider-next {
+  background: #2c1f59;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header__slider .swiper-slieder-prev {
+  background: #2c1f59;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+@media screen and (max-width: 988px) {
+  .slider-btn {
+    display: none !important;
+  }
+}
+
 .header_area .headerSwiper .swiper-button-next {
   left: auto;
   right: 5%;
@@ -170,7 +178,7 @@ ul {
   color: white;
 }
 
-.header_area .headerSwiper .swiper-slide {
+.header_area .swiper-slide {
   background: -webkit-gradient(
     linear,
     left top,
@@ -187,7 +195,7 @@ ul {
   );
   border-radius: 4px;
   color: white;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #222222d1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -195,21 +203,21 @@ ul {
   height: 305px;
 }
 
-.header_area .headerSwiper .swiper-slide:hover {
+.header_area .swiper-slide:hover {
   border: 1px solid #ffffff66;
 }
 
-.header_area .headerSwiper .swiper-slide p i {
+.header_area .swiper-slide p i {
   margin-right: 11px;
 }
 
-.header_area .headerSwiper .swiper-slide img {
+.header_area .swiper-slide img {
   height: 123px;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.header_area .headerSwiper .swiper-slide h6 {
+.header_area .swiper-slide h6 {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,11 +231,11 @@ ul {
   margin-bottom: 20px;
 }
 
-.header_area .headerSwiper .swiper-slide h6 span {
+.header_area .swiper-slide h6 span {
   color: #01cded;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price {
+.header_area .swiper-slide .dis__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,11 +247,11 @@ ul {
   justify-content: space-between;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .dis {
+.header_area .swiper-slide .dis__price .dis {
   margin-bottom: 5px;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .dis span {
+.header_area .swiper-slide .dis__price .dis span {
   font-weight: 400;
   font-size: 13px;
   color: #05bb59;
@@ -252,37 +260,42 @@ ul {
   border-radius: 4px;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .dis p {
+.header_area .swiper-slide .dis__price .dis p {
   font-weight: 400;
   font-size: 20px;
   color: #ffc700;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .pinCode {
+.header_area .swiper-slide .dis__price .pinCode {
   margin-bottom: 16px;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .pinCode span {
+.header_area .swiper-slide .dis__price .pinCode span {
   font-weight: 400;
   font-size: 13px;
   text-align: right;
   color: #9db4d3;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .pinCode p {
+.header_area .swiper-slide .dis__price .pinCode p {
   font-weight: 400;
   font-size: 20px;
   text-align: right;
   color: #9db4d3;
 }
 
-.header_area .headerSwiper .swiper-slide .dis__price .pinCode p i {
+.header_area .swiper-slide .dis__price .pinCode p i {
   margin-right: 4px;
 }
 
 .header_area .hero_bnnr {
   display: -webkit-box;
   display: -ms-flexbox;
+
+  /* background-repeat: no-repeat;
+  background-size: 1068px 680px;
+  height: 680px;
+  width: 1068px; */
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -346,10 +359,19 @@ ul {
 }
 
 .header_area .connect_btn .h_btn {
-  padding: 15px 24px 15px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 20px 10px 20px;
+  justify-content: center;
+  box-sizing: border-box;
+
   background: #0e0726;
+  /* orange */
+
   border: 2px solid #ffc700;
   border-radius: 8px;
+
   font-size: 18px;
   color: #ffc700;
   font-weight: 700;
@@ -547,6 +569,9 @@ ul {
 }
 
 @media all and (max-width: 992px) {
+  .slider-btn {
+    display: none;
+  }
   .header_area .h_nav {
     gap: 25px;
   }
@@ -577,6 +602,17 @@ ul {
   .header_area .headerSwiper .swiper-pagination-fraction {
     right: 49.8%;
   }
+  /* duplicate */
+  .header_area .swiper-pagination-fraction {
+    right: 49.8%;
+  }
+  .header_area .swiper-button-prev {
+    right: 55%;
+  }
+  .header_area .swiper-button-next {
+    right: 45%;
+  }
+
   .account .account_content .account__text {
     position: initial;
     -webkit-transform: inherit;
@@ -610,8 +646,156 @@ ul {
   .header_area .headerSwiper .swiper-button-next {
     right: 40%;
   }
+
   .header_area .headerSwiper .swiper-pagination-fraction {
     right: 46.8%;
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/* duplicate */
+.header_area .swiper-button-next {
+  right: 40%;
+}
+
+.header_area .swiper-button-next {
+  left: auto;
+  right: 5%;
+  top: 88%;
+  background: #2c1f59;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.header_area .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.header_area .swiper-button-prev {
+  left: auto;
+  right: 30%;
+  top: 88%;
+  background: #2c1f59;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.header_area .swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.header_area .swiper-pagination-fraction {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: auto;
+  right: 7.4%;
+  top: 104%;
+}
+
+/* btn details  */
+.bestDealsContainer {
+  /* background-image: url('../assets/images/back.png'); */
+  /* background-color: #0E0726; */
+  /* padding: 100px; */
+  margin-top: 70px;
+}
+.limitedOfferButton {
+  background: #01cded;
+  padding: 20px 20px;
+  width: 104px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-weight: 700px;
+  width: 160px !important;
+  font-size: 13px;
+  line-height: 120%;
+}
+.sliderLeftOrRightButton {
+  display: flex;
+  margin-top: 50px;
+}
+.leftArrow {
+  background: #2c1f59;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.rightArrow {
+  background: #2c1f59;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px 14px;
+  border-radius: 40px;
+  margin-left: 25px;
+}
+.bestDealsCardContainer {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  padding: 16px;
+  gap: 16px;
+  isolation: isolate;
+
+  width: 190px;
+  height: 310px;
+
+  /* gradient/white stroke */
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 54.17%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.356);
+  border-radius: 4px;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+}
+@media only screen and (max-width: 1281px) and (min-width: 1900px) {
+  .bestDealsCardContainer {
+    width: 190px;
+    height: 310px;
+  }
+}
+@media (min-width: 1901px) {
+  .bestDealsCardContainer {
+    width: 290px;
+    height: 370px;
+  }
+}

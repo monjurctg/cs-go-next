@@ -16,39 +16,46 @@ function HeaderSlider() {
         <div className="bt__deals">
           <span>limited offers</span>
           <h4>Best deals</h4>
+
+          <div className="slider-btn">
+            <div className="swiper-button-next"></div>
+            <div className="swiper-button-prev"></div>
+            <div class="swiper-pagination-fraction">1/6</div>
+          </div>
         </div>
+
         <div className="swiper headerSwiper">
           {domLoaded && (
             <Swiper
               slidesPerView={5}
-              spaceBetween={10}
-              pagination={{
-                type: "fraction",
-              }}
+              spaceBetween={15}
+              // pagination={{
+              //   type: "fraction",
+              // }}
               loop={true}
               breakpoints={{
                 350: {
                   slidesPerView: 1,
-                  spaceBetween: 10,
+                  spaceBetween: 15,
                 },
-                400: {
+                700: {
                   slidesPerView: 2,
-                  spaceBetween: 6,
+                  spaceBetween: 15,
                 },
-                768: {
+                968: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
+                  spaceBetween: 15,
                 },
-                1200: {
+                1100: {
                   slidesPerView: 4,
-                  spaceBetween: 10,
+                  spaceBetween: 15,
                 },
                 1400: {
                   slidesPerView: 5,
-                  spaceBetween: 10,
+                  spaceBetween: 15,
                 },
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="swiper-wrapper">
               <SwiperSlide className="swiper-slide">

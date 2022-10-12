@@ -1,11 +1,13 @@
 import Image from "next/image";
-import HeaderSlider from "../Components/Home/HeaderSlider";
+import BestDetails from "../Components/Home/BestDetails";
+// import HeaderSlider from "../Components/Home/HeaderSlider";
+import MaskGroup from "../public/img/MaskGroup.png";
 import HowItwork from "../Components/Home/HowItwork";
 import MarketPlace from "../Components/Home/MarketPlace";
 import Footer from "../Components/UI/Footer";
 import Navbar from "../Components/UI/Navbar";
 
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const color = typeof window !== "undefined" ? "red" : "blue";
@@ -22,18 +24,14 @@ export default function Home() {
             <div className="col-xl-12">
               <h1>Buy or Sell</h1>
               <div className="hero_bnnr">
-                <Image
-                  src="/img/MaskGroup.png"
-                  width={700}
-                  height={500}
-                  alt="bnnr"
-                />
+                <Image src={MaskGroup} height={680} alt="bnnr" />
               </div>
               <h3>Gear up for your next stylish clutch</h3>
               <div className="hero_btn">
                 <button className="btn">Check out the Market</button>
               </div>
-              <HeaderSlider />
+              {/* <HeaderSlider /> */}
+              <BestDetails />
             </div>
           </div>
         </div>
