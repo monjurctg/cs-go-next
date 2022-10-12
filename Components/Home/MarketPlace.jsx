@@ -81,7 +81,9 @@ function MarketPlace() {
                 </div>
               </div>
               <div className="mpBtn text-center">
-                <button className="btn">Check out the Market</button>
+                <button className="btn" style={{width: "245px"}}>
+                  Check out the Market
+                </button>
               </div>
             </div>
           </div>
