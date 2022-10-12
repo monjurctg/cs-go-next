@@ -13,10 +13,10 @@ function BestDetails() {
     setdomLoaded(true);
   }, []);
   const handleLeftClick = () => {
-    document.getElementById("prev").click();
+    // document.getElementById("prev").click();
   };
   const handleRightClick = () => {
-    document.getElementById("next").click();
+    // document.getElementById("next").click();
   };
   return (
     <div>
