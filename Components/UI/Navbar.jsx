@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import InitailProcess from "../Process/Streem/InitailProcess";
+import CommonBtn from "./CommonBtn";
 import DefaultModal from "./modal/DefaultModal";
 
 function Navbar() {
@@ -46,12 +47,12 @@ function Navbar() {
                   </li>
                 </ul>
                 <div className="connect_btn mt-md-4 text-md-center">
-                  <button
+                  <CommonBtn
                     className="h_btn"
                     onClick={() => setDefaultModalShow(!defaltModalShow)}>
                     <i className="fa-brands fa-steam-symbol"></i> Connect with
                     Steam
-                  </button>
+                  </CommonBtn>
                 </div>
               </div>
             </div>

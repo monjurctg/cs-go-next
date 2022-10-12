@@ -1,4 +1,5 @@
 import React from "react";
+import CommonBtn from "../UI/CommonBtn";
 
 function HowItwork() {
   return (
@@ -39,7 +40,7 @@ function HowItwork() {
                     It is as easy as rushing a bombsite with your trusted
                     teammates!
                   </p>
-                  <button className="btn">Create an account</button>
+                  <CommonBtn className="btn">Create an account</CommonBtn>
                 </div>
               </div>
             </div>

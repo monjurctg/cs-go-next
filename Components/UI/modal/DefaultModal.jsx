@@ -19,7 +19,7 @@ function DefaultModal({isShow, body, setClose}) {
       style={{display: `${modalShow ? "block" : "none"}`}}>
       <div className="modalContent">
         <div className="header">
-          <div className="title"></div>
+          <div></div>
           <div className="close" onClick={closeModal}>
             X
           </div>

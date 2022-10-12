@@ -38,13 +38,13 @@ function BestDetails() {
                 className="leftArrow"
                 style={{cursor: "pointer"}}
                 onClick={handleLeftClick}>
-                <img src="images/left-chevron.png" alt="" />
+                <i class="fa-solid fa-chevron-left"></i>
               </div>
               <div
                 className="rightArrow"
                 style={{cursor: "pointer"}}
                 onClick={handleRightClick}>
-                <img src="images/right-chevron.png" alt="" />
+                <i class="fa-solid fa-chevron-right"></i>
               </div>
             </div>
             <div>
@@ -86,7 +86,7 @@ function BestDetails() {
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
               style={{color: "#fff"}}>
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" style={{width: "246px"}}>
                 <a href="#">
                   <h6>
                     Water elemental <span>FN</span>
@@ -112,7 +112,7 @@ function BestDetails() {
                   </p>
                 </a>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" style={{width: "246px"}}>
                 <a href="#">
                   <h6>
                     Water elemental <span>FN</span>
@@ -139,7 +139,7 @@ function BestDetails() {
                 </a>
               </SwiperSlide>
 
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" style={{width: "246px"}}>
                 <a href="#">
                   <h6>
                     Water elemental <span>FN</span>
@@ -165,7 +165,7 @@ function BestDetails() {
                   </p>
                 </a>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" style={{width: "246px"}}>
                 <a href="#">
                   <h6>
                     Water elemental <span>FN</span>
@@ -191,7 +191,7 @@ function BestDetails() {
                   </p>
                 </a>
               </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
+              <SwiperSlide className="swiper-slide" style={{width: "246px"}}>
                 <a href="#">
                   <h6>
                     Water elemental <span>FN</span>

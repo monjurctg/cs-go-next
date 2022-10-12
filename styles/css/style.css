@@ -1,4 +1,5 @@
 @import url("./modal.css");
+@import url("./UI/customTag.css");
 
 img {
   max-width: 100%;
@@ -195,6 +196,7 @@ ul {
     rgba(255, 255, 255, 0.1) 54.17%,
     rgba(255, 255, 255, 0.2) 100%
   );
+  width: 246px;
   border-radius: 4px;
   color: white;
   padding: 10px;
@@ -361,22 +363,8 @@ ul {
 }
 
 .header_area .connect_btn .h_btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px 20px 10px 20px;
-  justify-content: center;
-  box-sizing: border-box;
-
-  background: #0e0726;
-  /* orange */
-
-  border: 2px solid #ffc700;
-  border-radius: 8px;
-
   font-size: 18px;
   color: #ffc700;
-  font-weight: 700;
 }
 
 .header_area .connect_btn .h_btn i {
@@ -731,8 +719,9 @@ ul {
   background: #2c1f59;
   display: flex;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   padding: 10px 14px;
   cursor: pointer !important;
   border-radius: 40px;
@@ -744,8 +733,9 @@ ul {
   cursor: pointer !important;
 
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  align-items: center;
+  height: 40px;
   padding: 10px 14px;
   border-radius: 40px;
   margin-left: 25px;

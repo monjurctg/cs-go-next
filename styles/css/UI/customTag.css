@@ -1,9 +1,31 @@
-.p {
+.cmn-Btn {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 36px 20px 24px;
+  gap: 12px;
+  width: 256px;
+  height: 62px;
   font-family: "Lato";
   font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  /* identical to box height */
 
-  line-height: 120%;
-  /* or 24px */
+  text-align: center;
 
-  color: #ffffff;
+  /* black */
+
+  background: #0e0726;
+  /* orange */
+
+  border: 2px solid #ffc700;
+  border-radius: 8px;
 }

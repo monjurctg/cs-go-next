@@ -18,7 +18,7 @@
   transition: all 0.5s ease-in-out;
 
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 10px 30px;
 
   /* black */
 
@@ -49,15 +49,33 @@
   cursor: pointer;
 }
 .modalContent .modalBody {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
-.modalBody .modalBody p {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  /* or 24px */
 
-  color: #ffffff;
+/* modal process */
+.process-container .process-body {
+  margin-top: 50px;
+}
+.process-body .condition {
+  display: flex;
+  gap: 10px;
+}
+.process-body .condition input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 8px;
+  gap: 10px;
+
+  position: relative;
+  width: 28px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+
+  /* orange */
+
+  background: #ffc700;
+  border-radius: 4px;
 }

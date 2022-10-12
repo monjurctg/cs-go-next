@@ -6,6 +6,7 @@ import HowItwork from "../Components/Home/HowItwork";
 import MarketPlace from "../Components/Home/MarketPlace";
 import Footer from "../Components/UI/Footer";
 import Navbar from "../Components/UI/Navbar";
+import CommonBtn from "../Components/UI/CommonBtn";
 
 // import styles from "../styles/Home.module.css";
 
@@ -28,7 +29,7 @@ export default function Home() {
               </div>
               <h3>Gear up for your next stylish clutch</h3>
               <div className="hero_btn">
-                <button className="btn">Check out the Market</button>
+                <CommonBtn className="btn">Check out the Market</CommonBtn>
               </div>
               {/* <HeaderSlider /> */}
               <BestDetails />
