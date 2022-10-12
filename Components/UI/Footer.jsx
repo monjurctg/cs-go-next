@@ -71,6 +71,7 @@ function Footer() {
                     <h3>We accept</h3>
                     <div className="payment">
                       <img src="img/Stripe_Logo,_revised_2016 1.png" alt="" />
+                      <img src="images/paypal.png" alt="" />
                     </div>
                   </div>
                 </div>
