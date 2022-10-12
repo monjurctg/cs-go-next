@@ -40,7 +40,9 @@ function HowItwork() {
                     It is as easy as rushing a bombsite with your trusted
                     teammates!
                   </p>
-                  <CommonBtn className="btn">Create an account</CommonBtn>
+                  <CommonBtn className="btn" width={245}>
+                    Create an account
+                  </CommonBtn>
                 </div>
               </div>
             </div>
