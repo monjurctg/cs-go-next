@@ -47,7 +47,7 @@ function BestDetails() {
             <h4
               style={{
                 color: "#9DB4D3",
-                marginBottom: "25px",
+                // marginBottom: "25px",
                 fontSize: "39px",
                 fontWeight: "400px",
                 width: "200px",

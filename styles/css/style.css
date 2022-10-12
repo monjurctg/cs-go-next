@@ -572,6 +572,9 @@ ul {
   .slider-btn-container {
     display: none;
   }
+  .sliderLeftOrRightButton {
+    margin-top: 10px;
+  }
   .slider-btn-992 {
     display: block;
     position: relative;
@@ -599,7 +602,8 @@ ul {
     gap: 50px;
   }
   .header_area h3 {
-    width: 80%;
+    width: 70% !important;
+    font-size: 40px;
   }
   .header_area .header__slider {
     -webkit-box-orient: vertical;
@@ -639,17 +643,26 @@ ul {
   .account .account_content {
     padding: 50px;
   }
+  .header_area h3 {
+    font-style: 25px !important;
+  }
 }
 
 @media all and (max-width: 768px) {
   .marketPlace {
     background-position: 84% -53%;
   }
+  .header_area h3 {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 567px) {
   .marketPlace {
     background-position: 74% -21%;
+  }
+  .header_area h3 {
+    width: 100%;
   }
   .marketPlace .marketPlace__items .mpItems__list {
     width: 100%;
