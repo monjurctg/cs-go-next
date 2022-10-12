@@ -45,7 +45,7 @@ function HeaderSlider() {
                   slidesPerView: 1,
                   spaceBetween: 15,
                 },
-                700: {
+                500: {
                   slidesPerView: 2,
                   spaceBetween: 15,
                 },

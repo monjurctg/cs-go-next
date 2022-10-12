@@ -93,7 +93,7 @@ function BestDetails() {
                     slidesPerView: 1,
                     spaceBetween: 15,
                   },
-                  700: {
+                  500: {
                     slidesPerView: 2,
                     spaceBetween: 15,
                   },
@@ -387,8 +387,8 @@ function BestDetails() {
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-        <div>
-          <p style={{}}>
+        <div className="fraction">
+          <p>
             {currentValue ?? 1}of {total ?? 6}
           </p>
         </div>

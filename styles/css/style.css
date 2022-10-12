@@ -546,6 +546,7 @@ ul {
   .header_area .header__slider .bt__deals {
     width: 90%;
   }
+
   .header_area .h_nav {
     gap: 65px;
   }
@@ -576,8 +577,14 @@ ul {
     position: relative;
     display: flex;
     top: -192px;
+    right: -16px;
     justify-content: center;
     align-items: center;
+  }
+  .fraction {
+    position: inherit;
+    top: 104px;
+    right: 70px;
   }
   .slider-btn {
     display: none;
