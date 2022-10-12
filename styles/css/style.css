@@ -143,6 +143,9 @@ ul {
   top: 100px;
   left: 0px;
 }
+.swiper-pagination {
+  display: none;
+}
 
 .header_area .swiper-slider-next {
   background: #2c1f59;

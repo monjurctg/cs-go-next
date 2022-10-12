@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 
 import Image from "next/image";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -8,15 +8,34 @@ import {Navigation, Pagination} from "swiper";
 
 function BestDetails() {
   const [domLoaded, setdomLoaded] = useState(false);
+  const swiperRef = useRef();
+  const [currentValue, setCurrentValue] = useState(1);
+  const [isChange, setIsChange] = useState(false);
+  const [total, setTotal] = useState(6);
+  useEffect(() => {
+    console.log("object");
+    const crntValue = window?.document.querySelector(
+      ".swiper-pagination-current"
+    );
+    const total = document.querySelector(".swiper-pagination-total")?.innerHTML;
+    setTotal(total);
+
+    setCurrentValue(crntValue?.innerHTML);
+  }, [isChange]);
 
   useEffect(() => {
     setdomLoaded(true);
   }, []);
   const handleLeftClick = () => {
-    // document.getElementById("prev").click();
+    setIsChange(!isChange);
+    document.getElementById("prev").click();
   };
   const handleRightClick = () => {
-    // document.getElementById("next").click();
+    document.getElementById("next").click();
+    setIsChange(!isChange);
+  };
+  const prevHandler = () => {
+    swiperRef.current?.slidePrev();
   };
   return (
     <div>
@@ -49,7 +68,9 @@ function BestDetails() {
               </div>
             </div>
             <div>
-              <p style={{color: "#fff", marginTop: "10px"}}>5 of 35</p>
+              <p style={{color: "#fff", marginTop: "10px"}}>
+                {currentValue} of {total}
+              </p>
             </div>
           </div>
           <div className="swiper headerSwiper">
@@ -57,9 +78,12 @@ function BestDetails() {
               <Swiper
                 slidesPerView={5}
                 spaceBetween={15}
-                // pagination={{
-                //   type: "fraction",
-                // }}
+                onBeforeInit={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                pagination={{
+                  type: "fraction",
+                }}
                 loop={true}
                 breakpoints={{
                   350: {
@@ -242,6 +266,10 @@ function BestDetails() {
                     </p>
                   </a>
                 </SwiperSlide>
+                <div id="prev" onClick={prevHandler}></div>
+                <div
+                  id="next"
+                  onClick={() => swiperRef.current?.slideNext()}></div>
               </Swiper>
             )}
             <div className="">

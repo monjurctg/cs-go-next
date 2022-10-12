@@ -7,6 +7,7 @@ import MarketPlace from "../Components/Home/MarketPlace";
 import Footer from "../Components/UI/Footer";
 import Navbar from "../Components/UI/Navbar";
 import CommonBtn from "../Components/UI/CommonBtn";
+import HeaderSlider from "../Components/Home/HeaderSlider";
 
 // import styles from "../styles/Home.module.css";
 

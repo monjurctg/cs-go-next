@@ -1,4 +1,5 @@
 import React from "react";
+import CheckBox from "../../UI/CustomTag/CheckBox";
 import Text from "../../UI/CustomTag/Text";
 
 function LoginDisclaimer({onNext}) {
@@ -9,7 +10,7 @@ function LoginDisclaimer({onNext}) {
       </Text>
       <div className="process-body">
         <div className="condition">
-          <input type="checkbox" name="" id="" />
+          <CheckBox />
           <p className="p">I agree that I am 18 years old.</p>
         </div>
       </div>

@@ -17,11 +17,18 @@ function HeaderSlider() {
           <span>limited offers</span>
           <h4>Best deals</h4>
 
-          <div className="slider-btn">
-            <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div>
-            <div class="swiper-pagination-fraction">1/6</div>
+          <div className="sliderLeftOrRightButton">
+            <div className="leftArrow" style={{cursor: "pointer"}}>
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div className="rightArrow" style={{cursor: "pointer"}}>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
+
+          <p style={{color: "#fff", marginTop: "10px"}}>
+            {0} of {6}
+          </p>
         </div>
 
         <div className="swiper headerSwiper">
