@@ -1,8 +1,11 @@
 import React from "react";
+import DefaultModal from "./modal/DefaultModal";
 
 function Footer() {
   return (
     <>
+      <DefaultModal />
+
       <footer className="footer">
         <div className="container">
           <hr className="mb-5" />

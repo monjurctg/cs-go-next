@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
+import InitailProcess from "../Process/Streem/InitailProcess";
+import DefaultModal from "./modal/DefaultModal";
 
 function Navbar() {
+  const [defaltModalShow, setDefaultModalShow] = useState(false);
+  console.log(defaltModalShow);
+
   return (
     <div className="container">
       <div className="row">
@@ -41,7 +46,9 @@ function Navbar() {
                   </li>
                 </ul>
                 <div className="connect_btn mt-md-4 text-md-center">
-                  <button className="h_btn">
+                  <button
+                    className="h_btn"
+                    onClick={() => setDefaultModalShow(!defaltModalShow)}>
                     <i className="fa-brands fa-steam-symbol"></i> Connect with
                     Steam
                   </button>
@@ -51,6 +58,11 @@ function Navbar() {
           </nav>
         </div>
       </div>
+      <DefaultModal
+        isShow={defaltModalShow}
+        setClose={setDefaultModalShow}
+        body={<InitailProcess />}
+      />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+@import url("./modal.css");
+
 img {
   max-width: 100%;
   height: auto;
@@ -395,7 +397,7 @@ ul {
 
 .account .shining {
   position: absolute;
-  bottom: -12%;
+
   left: 0;
 }
 
@@ -732,13 +734,15 @@ ul {
   width: 50px;
   height: 50px;
   padding: 10px 14px;
-  cursor: pointer;
+  cursor: pointer !important;
   border-radius: 40px;
 }
 .rightArrow {
   background: #2c1f59;
   cursor: pointer;
   display: flex;
+  cursor: pointer !important;
+
   justify-content: center;
   width: 50px;
   height: 50px;

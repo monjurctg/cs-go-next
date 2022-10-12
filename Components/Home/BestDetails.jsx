@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import Image from "next/image";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -6,6 +6,17 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 
 function BestDetails() {
+  const [domLoaded, setdomLoaded] = useState(false);
+
+  useEffect(() => {
+    setdomLoaded(true);
+  }, []);
+  const handleLeftClick = () => {
+    document.getElementById("prev").click();
+  };
+  const handleRightClick = () => {
+    document.getElementById("next").click();
+  };
   return (
     <div>
       <div className="bestDealsContainer header_area">
@@ -23,10 +34,16 @@ function BestDetails() {
               Best Deals
             </h4>
             <div className="sliderLeftOrRightButton">
-              <div className="leftArrow">
+              <div
+                className="leftArrow"
+                style={{cursor: "pointer"}}
+                onClick={handleLeftClick}>
                 <img src="images/left-chevron.png" alt="" />
               </div>
-              <div className="rightArrow">
+              <div
+                className="rightArrow"
+                style={{cursor: "pointer"}}
+                onClick={handleRightClick}>
                 <img src="images/right-chevron.png" alt="" />
               </div>
             </div>
@@ -38,6 +55,10 @@ function BestDetails() {
             <Swiper
               spaceBetween={10}
               //   navigation={true}
+              navigation={{
+                prevEl: "#prev",
+                nextEl: "#next",
+              }}
               slidesPerView={5}
               breakpoints={{
                 350: {
@@ -196,6 +217,8 @@ function BestDetails() {
                   </p>
                 </a>
               </SwiperSlide>
+              <div id="prev"></div>
+              <div id="next"></div>
             </Swiper>
           </div>
         </div>
