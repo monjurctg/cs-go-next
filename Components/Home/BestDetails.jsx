@@ -95,7 +95,11 @@ function BestDetails() {
                   },
                   600: {
                     slidesPerView: 2,
-                    spaceBetween: 25,
+                    spaceBetween: 15,
+                  },
+                  800: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
                   },
                   968: {
                     slidesPerView: 3,

@@ -171,7 +171,7 @@ ul {
       );
       border-radius: 4px;
       color: white;
-      padding: 15px;
+      padding: 15px 7px 15px 10px;
       border: 1px solid #222222d1;
       transition: 0.3s;
       margin-bottom: 90px;
@@ -557,21 +557,17 @@ ul {
       line-height: 47%;
 
       margin: 70px 0px;
-     
     }
-    .marketPlace__items{
-        .mpItems__list{
-            h5 {
-                font-size: 16px;
-              }
-              p {
-                font-size: 12px;
-              }
+    .marketPlace__items {
+      .mpItems__list {
+        h5 {
+          font-size: 16px;
         }
+        p {
+          font-size: 12px;
+        }
+      }
     }
-    
-  
-    
   }
 
   .marketPlace .marketPlace__items .mpItems__list {
@@ -587,14 +583,13 @@ ul {
   .header_area .headerSwiper .swiper-button-next {
     right: 40%;
   }
-  .mpBtn{
+  .mpBtn {
     width: 65%;
     margin-left: auto;
     text-align: unset !important;
-    .btn{
-
-        padding: 16px 20px;
-        width: 60%;
+    .btn {
+      padding: 16px 20px;
+      width: 60%;
     }
   }
 
