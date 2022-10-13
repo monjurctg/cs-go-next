@@ -64,7 +64,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-5">
+            <div className="col-lg-4 col-5 ">
               <div className="row">
                 <div className="col-lg-6 col-sm-3 mt-sm-4 mt-lg-0">
                   <div className="footer__list">

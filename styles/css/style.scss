@@ -436,9 +436,10 @@ ul {
 }
 
 .footer {
-  padding: 20px;
+  padding: 10px 0px;
 
   .footer__content {
+    margin-left: 10px;
     p {
       /* caption/small */
 
@@ -495,6 +496,12 @@ ul {
     .footer__list {
       h3 {
         font-size: 15px;
+      }
+    }
+    .payment {
+      img {
+        height: 25px;
+        width: 25px;
       }
     }
   }
