@@ -20,6 +20,9 @@ function MyApp({Component, pageProps}) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lexend:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet"></link>
       </Head>
 
       <Component {...pageProps} />
