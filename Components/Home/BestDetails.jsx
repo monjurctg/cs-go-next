@@ -40,14 +40,14 @@ function BestDetails() {
   };
   return (
     <div>
-      <div className=" mt-3 ">
+      <div className=" mt-5 ">
         <div style={{overflow: "hidden"}} className="header__slider w-100">
-          <div className="bt__deals">
+          <div className="bt__deals mt-4">
             <button className="limitedOfferButton">Limited Offer</button>
             <h4
               style={{
                 color: "#9DB4D3",
-                // marginBottom: "25px",
+                marginTop: "25px",
                 fontSize: "39px",
                 fontWeight: "400px",
                 width: "200px",
