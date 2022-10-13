@@ -60,6 +60,7 @@ ul {
   padding: 15px 24px 15px 24px;
   font-size: 18px;
   font-weight: 700;
+  font-family: "Lato" !important;
   color: #0e0726;
 
   &:hover {
@@ -435,11 +436,22 @@ ul {
 }
 
 .footer {
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 
   .footer__content {
     p {
+      /* caption/small */
+
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
       font-size: 14px;
+      line-height: 120%;
+      /* or 10px */
+
+      /* white */
+
+      color: #ffffff;
     }
 
     span {
@@ -469,13 +481,21 @@ ul {
       font-weight: 400;
       font-size: 20px;
       color: #9db4d3;
-      margin-bottom: 32px;
+      margin-bottom: 15px;
     }
 
     .payment {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media all and (max-width: 992px) {
+    .footer__list {
+      h3 {
+        font-size: 15px;
+      }
     }
   }
 }
@@ -559,11 +579,21 @@ ul {
   .account .account_content {
     padding: 50px;
   }
+  .footer__content {
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
   .marketPlace {
     background-position: 84% -53%;
+  }
+  .footer__content {
+    p {
+      font-size: 11px;
+    }
   }
 }
 
@@ -576,6 +606,7 @@ ul {
 
       margin: 70px 0px;
     }
+
     .marketPlace__items {
       .mpItems__list {
         h5 {

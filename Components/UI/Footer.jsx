@@ -6,11 +6,11 @@ function Footer() {
     <>
       <DefaultModal />
 
-      <footer className="footer">
+      <footer className="footer" style={{backgroundImage: `url("img/bg.png")`}}>
         <div className="container">
           <hr className="mb-5" />
           <div className="row">
-            <div className="col-lg-4 col-6 ">
+            <div className="col-lg-4 col-7 ">
               <div className="footer__content">
                 <div className="footer__logo mb-4">
                   <img src="img/SD Logo 2.png" alt="" />
@@ -64,7 +64,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-6">
+            <div className="col-lg-4 col-5">
               <div className="row">
                 <div className="col-lg-6 col-sm-3 mt-sm-4 mt-lg-0">
                   <div className="footer__list">

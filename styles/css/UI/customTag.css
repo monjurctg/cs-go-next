@@ -1,6 +1,7 @@
 .cmn-Btn {
   box-sizing: border-box;
 
+  font-family: "Lato" !important;
   /* Auto layout */
 
   display: flex;

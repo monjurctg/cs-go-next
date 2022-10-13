@@ -572,6 +572,9 @@ ul {
   .slider-btn-container {
     display: none;
   }
+  .footer__content p {
+    font-size: 12px;
+  }
   .sliderLeftOrRightButton {
     margin-top: 10px;
   }
@@ -655,11 +658,17 @@ ul {
   .header_area h3 {
     width: 100%;
   }
+  .footer__content p {
+    font-size: 11px;
+  }
 }
 
 @media all and (max-width: 567px) {
   .marketPlace {
     background-position: 74% -21%;
+  }
+  .footer__content p {
+    font-size: 11px !important;
   }
   .header_area h3 {
     width: 100%;
