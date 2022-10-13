@@ -90,16 +90,16 @@ function BestDetails() {
                 loop={true}
                 breakpoints={{
                   350: {
-                    slidesPerView: 1,
-                    spaceBetween: 15,
-                  },
-                  500: {
                     slidesPerView: 2,
-                    spaceBetween: 15,
+                    spaceBetween: 10,
+                  },
+                  600: {
+                    slidesPerView: 2,
+                    spaceBetween: 25,
                   },
                   968: {
                     slidesPerView: 3,
-                    spaceBetween: 15,
+                    spaceBetween: 20,
                   },
                   1100: {
                     slidesPerView: 4,
