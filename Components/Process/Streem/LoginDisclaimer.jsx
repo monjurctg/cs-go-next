@@ -51,7 +51,7 @@ function LoginDisclaimer({onNext}) {
         </div>
       </div>
       <div className="process-btn">
-        <CommonBtn width={110} className="btn">
+        <CommonBtn width={110} className="btn" onClick={onNext}>
           Next
         </CommonBtn>
       </div>

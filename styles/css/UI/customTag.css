@@ -10,7 +10,7 @@
   padding: 15px 24px 15px 24px;
   background: #0e0726;
   gap: 5px;
-  border: 1px solid #271369;
+  border: 2px solid #ffc700;
   border-radius: 8px;
   font-size: 18px;
   color: #ffc700;
@@ -25,7 +25,7 @@
   background: #0e0726;
   /* orange */
 
-  border: 1px solid #271369;
+  /* border: 1px solid #271369; */
   border-radius: 8px;
 }
 

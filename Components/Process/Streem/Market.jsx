@@ -1,4 +1,5 @@
 import React from "react";
+import CommonBtn from "../../UI/CommonBtn";
 import Text from "../../UI/CustomTag/Text";
 
 function Market({onNext}) {
@@ -9,7 +10,7 @@ function Market({onNext}) {
       </Text>
       <div className="process-body">
         <div className="text">
-          <p className="p">
+          <p className="p mb-5">
             Explore and buy items that have been put on sale by other users on
             our marketplace. You can also view featured seller shops to browse
             their items. Each purchased item will be instantly added to your
@@ -18,7 +19,12 @@ function Market({onNext}) {
         </div>
       </div>
       <div className="process-btn">
-        <button onClick={onNext}>Next</button>
+        <CommonBtn width={174} className="btn" onClick={onNext}>
+          Got it, next
+        </CommonBtn>
+        <CommonBtn width={174} className="" onClick={onNext}>
+          Skip all steps
+        </CommonBtn>
       </div>
     </div>
   );
