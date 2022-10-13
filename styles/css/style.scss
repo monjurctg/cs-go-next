@@ -79,6 +79,7 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: #9db4d3;
+    font-family: "Lato";
     // margin-bottom: 24px;
   }
 
@@ -90,6 +91,7 @@ ul {
     margin: 0 auto;
     color: #ffffff;
     margin-bottom: 24px;
+    font-family: "Lato";
   }
 
   .header__slider {
@@ -111,12 +113,16 @@ ul {
         text-transform: uppercase;
         color: #0e0726;
         width: fit-content;
+        font-family: "Lato";
+
         margin-bottom: 20px;
       }
 
       h4 {
         font-weight: 400;
         font-size: 39px;
+        font-family: "Lato";
+
         color: #9db4d3;
       }
     }
@@ -277,6 +283,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 90px;
+    font-family: "Lato";
 
     li {
       display: flex;
@@ -287,6 +294,7 @@ ul {
         &:hover {
           color: #ffc700 !important;
           transition: 0.3s;
+          font-family: "Lato";
         }
       }
 
@@ -306,6 +314,7 @@ ul {
       font-size: 18px;
       color: #ffc700;
       font-weight: 700;
+      font-family: "Lato";
 
       i {
         margin-right: 5px;
@@ -323,6 +332,7 @@ ul {
 .account {
   padding: 8px 0px;
   position: relative;
+  font-family: "Lato";
 
   .shining {
     // position: absolute;
@@ -350,6 +360,8 @@ ul {
       h4 {
         font-size: 39px;
         line-height: 120%;
+        font-family: "Lato";
+
         color: #9db4d3;
         margin-bottom: 25px;
       }
@@ -357,6 +369,7 @@ ul {
       p {
         line-height: 120%;
         margin-bottom: 40px;
+        font-family: "Lato";
       }
     }
   }
