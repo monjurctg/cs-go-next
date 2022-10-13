@@ -54,17 +54,28 @@
 
 /* Create a custom checkbox */
 .checkmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 8px;
+  gap: 10px;
+
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+  width: 28px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+
+  /* orange */
+
+  background: #ffc700;
+  border-radius: 4px;
 }
 
 /* On mouse-over, add a grey background color */
 .checkbox-container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #0e0726;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -87,10 +98,10 @@
 /* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
   left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
+  top: 6px;
+  width: 10px;
+  height: 14px;
+  border: solid #0e0726;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
