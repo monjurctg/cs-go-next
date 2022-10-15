@@ -69,9 +69,11 @@ function BestDetails() {
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </div>
-              <div>
-                <p style={{color: "#fff", marginTop: "10px"}}>
-                  {currentValue ?? 1}of {total ?? 6}
+              <div className="d-flex">
+                <p> {currentValue ?? 1} &nbsp; </p>
+                <p style={{color: "#9DB4D3"}}>
+                  of &nbsp;
+                  {total ?? 6}
                 </p>
               </div>
             </div>
@@ -401,9 +403,11 @@ function BestDetails() {
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
-        <div className="fraction">
-          <p>
-            {currentValue ?? 1}of {total ?? 6}
+        <div className="fraction d-flex">
+          <p> {currentValue ?? 1} &nbsp; </p>
+          <p style={{color: "#9DB4D3"}}>
+            of &nbsp;
+            {total ?? 6}
           </p>
         </div>
       </div>
