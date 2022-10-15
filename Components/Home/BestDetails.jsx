@@ -40,7 +40,7 @@ function BestDetails() {
   };
   return (
     <div>
-      <div className=" mt-5 ">
+      <div className=" slider-container ">
         <div style={{overflow: "hidden"}} className="header__slider w-100">
           <div className="bt__deals mt-4">
             <button className="limitedOfferButton">Limited Offer</button>
@@ -79,7 +79,7 @@ function BestDetails() {
           <div className="swiper headerSwiper">
             {domLoaded && (
               <Swiper
-                slidesPerView={5}
+                slidesPerView={4}
                 spaceBetween={15}
                 onBeforeInit={(swiper) => {
                   swiperRef.current = swiper;
@@ -93,25 +93,35 @@ function BestDetails() {
                     slidesPerView: 2,
                     spaceBetween: 10,
                   },
-                  600: {
+                  500: {
                     slidesPerView: 2,
                     spaceBetween: 15,
                   },
-                  800: {
+                  770: {
                     slidesPerView: 3,
-                    spaceBetween: 10,
+                    spaceBetween: 15,
                   },
-                  968: {
+                  900: {
                     slidesPerView: 3,
                     spaceBetween: 20,
                   },
-                  1100: {
-                    slidesPerView: 4,
-                    spaceBetween: 15,
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
                   },
+
+                  1100: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                  },
+                  1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+
                   1400: {
-                    slidesPerView: 5,
-                    spaceBetween: 15,
+                    slidesPerView: 4,
+                    spaceBetween: 20,
                   },
                 }}
                 // navigation={true}

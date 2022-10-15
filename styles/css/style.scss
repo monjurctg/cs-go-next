@@ -83,6 +83,10 @@ ul {
     color: #9db4d3;
     font-family: "Lato";
     // margin-bottom: 24px;
+    @media all and (max-width: 992px) {
+      margin-top: 60px;
+      margin-bottom: 25px;
+    }
   }
 
   h3 {
@@ -96,40 +100,45 @@ ul {
     font-family: "Lato";
   }
 
-  .header__slider {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 30px 0px;
+  .slider-container {
+    margin-top: 40px;
+    @media all and (max-width: 992px) {
+      margin-top: 80px;
+    }
+    .header__slider {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      padding: 30px 0px;
 
-    .bt__deals {
-      width: 60%;
+      .bt__deals {
+        width: 60%;
 
-      span {
-        background: #01cded;
-        border-radius: 2px;
-        padding: 8px 15px;
-        display: block;
-        font-weight: 700;
-        font-size: 13px;
-        text-transform: uppercase;
-        color: #0e0726;
-        width: fit-content;
-        font-family: "Lato";
+        span {
+          background: #01cded;
+          border-radius: 2px;
+          padding: 8px 15px;
+          display: block;
+          font-weight: 700;
+          font-size: 13px;
+          text-transform: uppercase;
+          color: #0e0726;
+          width: fit-content;
+          font-family: "Lato";
 
-        margin-bottom: 20px;
-      }
+          margin-bottom: 20px;
+        }
 
-      h4 {
-        font-weight: 400;
-        font-size: 39px;
-        font-family: "Lato";
+        h4 {
+          font-weight: 400;
+          font-size: 39px;
+          font-family: "Lato";
 
-        color: #9db4d3;
+          color: #9db4d3;
+        }
       }
     }
   }
-
   .headerSwiper {
     .swiper-pagination-fraction {
       width: fit-content;
@@ -393,15 +402,18 @@ ul {
   }
 
   .marketPlace__items {
-    margin-bottom: 80px;
+    margin-left: 80px;
 
     .mpItems__list {
       background: #130a35;
       box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
-      padding: 60px 32px 32px;
+      padding: 32px 32px;
       width: 385px;
       position: relative;
+      @media all and (max-width: 1200px) {
+        margin-left: 0px !important;
+      }
 
       span {
         position: absolute;
@@ -428,6 +440,7 @@ ul {
         font-weight: 400;
         font-size: 25px;
         line-height: 120%;
+        margin-top: 15px;
         color: #ffc700;
         margin-bottom: 15px;
       }
@@ -554,11 +567,6 @@ ul {
   .header_area h3 {
     width: 80%;
     font-size: 30px;
-  }
-
-  .header_area .header__slider {
-    flex-direction: column;
-    gap: 10px;
   }
 
   .headerSwiper {
