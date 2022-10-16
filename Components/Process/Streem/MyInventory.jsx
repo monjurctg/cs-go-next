@@ -2,7 +2,7 @@ import React from "react";
 import CommonBtn from "../../UI/CommonBtn";
 import Text from "../../UI/CustomTag/Text";
 
-function MyInventory({onNext}) {
+function MyInventory({onNext, onSkip}) {
   return (
     <div className="process-container">
       <Text fs={31} fw={400} color="#9DB4D3">
@@ -27,8 +27,10 @@ function MyInventory({onNext}) {
               items that you remove from sale will also appear in this tab. You
               can withdraw them to your Steam account or put back on sale.
             </p>
-            “New” marker on a skin card would indicate an item that has been
-            purchased by you in the last 24 hours.
+            <p className="mt-5">
+              “New” marker on a skin card would indicate an item that has been
+              purchased by you in the last 24 hours.
+            </p>
           </div>
         </div>
       </div>
@@ -36,7 +38,7 @@ function MyInventory({onNext}) {
         <CommonBtn width={174} className="btn" onClick={onNext}>
           Got it, next
         </CommonBtn>
-        <CommonBtn width={174} className="" onClick={onNext}>
+        <CommonBtn width={174} className="" onClick={onSkip}>
           Skip all steps
         </CommonBtn>
       </div>

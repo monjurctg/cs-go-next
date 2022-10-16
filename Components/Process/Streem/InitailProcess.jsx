@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import CompleteProfile from "./CompleteProfile";
 import ItemOnSale from "./ItemOnSale";
 
@@ -13,7 +13,7 @@ const steps = {
   4: ItemOnSale,
   5: CompleteProfile,
 };
-function InitailProcess() {
+function InitailProcess({isShow}) {
   const [step, setStep] = useState(1);
   const Step = steps[step];
   const onNext = () => {
@@ -21,9 +21,24 @@ function InitailProcess() {
       setStep(step + 1);
     }
   };
+  const onSkip = () => {
+    if (step <= 4) {
+      setStep(5);
+    }
+  };
+  const onCross = () => {
+    if (step <= 4) {
+      setStep(1);
+    }
+  };
+  useEffect(() => {
+    if (!isShow) {
+      setStep(1);
+    }
+  }, [isShow]);
   return (
     <div>
-      <Step onNext={onNext} setStep={setStep} />
+      <Step onNext={onNext} setStep={setStep} onSkip={onSkip} />
     </div>
   );
 }

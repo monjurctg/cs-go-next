@@ -62,7 +62,7 @@ function Navbar() {
       <DefaultModal
         isShow={defaltModalShow}
         setClose={setDefaultModalShow}
-        body={<InitailProcess />}
+        body={<InitailProcess isShow={defaltModalShow} />}
       />
     </div>
   );

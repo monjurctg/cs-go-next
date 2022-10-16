@@ -2,7 +2,7 @@ import React from "react";
 import CommonBtn from "../../UI/CommonBtn";
 import Text from "../../UI/CustomTag/Text";
 
-function Market({onNext}) {
+function Market({onNext, onSkip}) {
   return (
     <div className="process-container">
       <Text fs={31} fw={400} color="#9DB4D3">
@@ -22,7 +22,7 @@ function Market({onNext}) {
         <CommonBtn width={174} className="btn" onClick={onNext}>
           Got it, next
         </CommonBtn>
-        <CommonBtn width={174} className="" onClick={onNext}>
+        <CommonBtn width={174} className="" onClick={onSkip}>
           Skip all steps
         </CommonBtn>
       </div>

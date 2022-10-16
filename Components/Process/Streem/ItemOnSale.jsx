@@ -2,7 +2,7 @@ import React from "react";
 import CommonBtn from "../../UI/CommonBtn";
 import Text from "../../UI/CustomTag/Text";
 
-function ItemOnSale({onNext}) {
+function ItemOnSale({onNext, onSkip}) {
   return (
     <div className="process-container">
       <Text fs={31} fw={400} color="#9DB4D3">
@@ -12,23 +12,19 @@ function ItemOnSale({onNext}) {
         <div className="text">
           <div className="p mb-5">
             <p className="mb-4">
-              {" "}
-              Manage all your items in one dedicated space.
+              Here you can manage all items that you have listed for sale on the
+              Market.
             </p>
             <p className="mb-4">
-              {" "}
-              <span style={{color: "#FFC700"}}>Steam Inventory</span> - these
-              are items currently located on your connected Steam account. You
-              can put them on sale to appear on the Market.
+              Click on the three dots at the bottom right corner of a skin card
+              to Change price or Delist item. Any item you remove from sale will
+              be transferred to your Dojo Inventory.
             </p>
             <p className="mb-4">
-              <span style={{color: "#FFC700"}}>Dojo Inventory</span> - all items
-              you purchased on the Market will be stored here. In addition,
-              items that you remove from sale will also appear in this tab. You
-              can withdraw them to your Steam account or put back on sale.
+              Hit the “Share my shop” button to copy a unique link to your
+              Market shop and share with your community to sell the items
+              faster.
             </p>
-            “New” marker on a skin card would indicate an item that has been
-            purchased by you in the last 24 hours.
           </div>
         </div>
       </div>
@@ -36,7 +32,7 @@ function ItemOnSale({onNext}) {
         <CommonBtn width={174} className="btn" onClick={onNext}>
           Got it, next
         </CommonBtn>
-        <CommonBtn width={174} className="" onClick={onNext}>
+        <CommonBtn width={174} className="" onClick={onSkip}>
           Skip all steps
         </CommonBtn>
       </div>

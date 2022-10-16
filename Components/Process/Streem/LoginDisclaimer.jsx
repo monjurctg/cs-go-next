@@ -3,7 +3,7 @@ import CommonBtn from "../../UI/CommonBtn";
 import CheckBox from "../../UI/CustomTag/CheckBox";
 import Text from "../../UI/CustomTag/Text";
 
-function LoginDisclaimer({onNext}) {
+function LoginDisclaimer({onNext, onCross}) {
   return (
     <div className="process-container">
       <Text fs={31} fw={400} color="#9DB4D3">
