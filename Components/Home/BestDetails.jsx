@@ -69,7 +69,9 @@ function BestDetails() {
                   <i class="fa-solid fa-chevron-right"></i>
                 </div>
               </div>
-              <div className="d-flex">
+              <div
+                className="d-flex"
+                style={{marginTop: "27px", marginLeft: "20px"}}>
                 <p> {currentValue ?? 1} &nbsp; </p>
                 <p style={{color: "#9DB4D3"}}>
                   of &nbsp;
